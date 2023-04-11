@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Hear Yourself Blog System
+{% endblock %}
+
+{% block css_files %}
+<link rel="icon" type="image/x-icon" href="{% static "blog/images/logo.ico"%}">
+<link rel="stylesheet" href="{% static "blog/post.css" %}" />
+<link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+
+
+{% block content%}
+
+
+
+
+<section id="welcome">
+    <header>
+        <img src="{% static "blog/images/mountain.jpg"%}" alt="Rohit - The Author of this Blog" />
+        <h2> Rohit Chamyal Blog </h2>
+    </header>
+        <p> Hi, I am Rohit and I love to Blog the all types of things which bring me closer to me my all feelings in this
+        blog</p>
+</section>
+
+<section id="latest-posts">
+
+    <h2> My latest Thoughts </h2>
+
+    <ul>
+        {% for post in posts %}
+        {% include "blog/includes/post.html" %}
+        {% endfor %}
+    </ul>
+
+
+<section id="about">
+    <h2>What I Do</h2>
+    <p> i love programming and discover myself and learning new things
+        which bring peace to my life</p>
+    <p> i love to discover new places outside and inside </p>
+
+</section>
+</section>
+
+
+
+{% endblock %}
