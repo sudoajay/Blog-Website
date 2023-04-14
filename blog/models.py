@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import date
+from tinymce import models as tinymce_models
 
 # Create your models here.
 class addPost(models.Model):
@@ -9,7 +10,7 @@ class addPost(models.Model):
     date = models.DateField(("Date"), default=date.today)
     title =models.CharField(max_length=50, null=True)
     shortContent = models.TextField(null=True)
-    content = models.TextField(null=True)
+    content = tinymce_models.HTMLField()
     
     def __str__(self):
 	    return self.slug
