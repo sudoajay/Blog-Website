@@ -90,3 +90,35 @@ h3 {
     font-size:14px ;
   }
 }
+
+@media screen and (max-width: 382px) {
+  #main-navigation img{
+    height: 50px;
+    width: 50px;
+  }
+  #main-navigation h1{
+    font-size:18px ;
+    margin-bottom: 5px;
+  }
+  #main-navigation nav{
+    font-size:14px ;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 346px) {
+  #main-navigation img{
+    height: 40px;
+    width: 40px;
+  }
+  #main-navigation h1{
+    font-size:16px ;
+    margin-bottom: 10px;
+
+  }
+  #main-navigation nav{
+    font-size:12px ;
+    margin-bottom: 10px;
+
+  }
+}

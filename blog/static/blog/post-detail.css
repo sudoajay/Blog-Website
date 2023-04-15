@@ -24,6 +24,9 @@ body {
     color: white;
     margin: 2rem auto 0 auto;
      font-size: 4.0rem;
+     line-height: 1.5em;
+    float: left;
+    width: 50%;
   }
   
   #summary article {
