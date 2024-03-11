@@ -23,9 +23,9 @@
 
 #welcome h2 {
   font-size: 3.5rem;
-  margin: 0 0 0 2rem;
+  margin-top: 10px;
+  margin-left: 10px;
   color: #e4e4e4;
-  width: 10rem;
 }
 
 #welcome p {

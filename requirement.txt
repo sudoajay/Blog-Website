@@ -1,4 +1,2 @@
-asgiref==3.6.0
-Django==4.2
-django-tinymce==3.6.1
-sqlparse==0.4.3
+Django==5.0.3
+django-tinymce==3.7.1
